@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="js.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -25,7 +26,7 @@
      <section id="sec1">
         <h2>Ocean Care</h2>
         <p>protecting and restoring marine and coastal ecosystems,<br> and enhancing the well-being of people who depend on marine resources</p>
-        <button>Take Action</button>
+        <button onclick="takeAction()">Take Action</button>
       </section>
 
       <div class="sec2">
@@ -112,7 +113,7 @@
             <input type="email" id="email" name="email"><br>
             <label for="alamat">Alamat:</label>
             <textarea id="alamat" name="alamat"></textarea><br>
-            <input type="submit" value="Daftar">
+            <button type="submit " class="btn  mt-4" onclick="send()" style="background: #2541B2; color: white;">Submit</button>
           </form>
         </div>
         <div class="maps">
@@ -127,6 +128,7 @@
           </iframe>
         </div>
       </div>
+      <div class="container" id="show_response">
 
       <footer>
         <div class="container">
